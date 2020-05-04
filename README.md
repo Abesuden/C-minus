@@ -2,14 +2,13 @@
 <meta name="description" content="This documentation is about the C- language and how to understand it for making a compiler.">
 <meta name="author"      content="Alexander Besuden, Austin Laurin">
 
-# C- Grammer Rules
+# C- Grammar Rules
 
 [![Language](https://img.shields.io/badge/Language-C---informational.svg)](https://github.com/abesuden/C-minus/contributors)
 [![Contributors](https://img.shields.io/badge/Contributors-2-informational.svg)](https://github.com/abesuden/C-minus/contributors)
 [![Maintenance](https://img.shields.io/badge/Maintained-yes-brightgreen.svg)](https://github.com/abesuden/C-minus/graphs/commit-activity)
-[![Progress](https://img.shields.io/badge/Progress-75%25-orange.svg)](https://github.com/abesuden/C-minus)
+[![Progress](https://img.shields.io/badge/Progress-25%25-orange.svg)](https://github.com/abesuden/C-minus)
 [![Issues](https://img.shields.io/badge/Issues-2-1abc9c.svg)](https://github.com/abesuden/C-minus)
-[![Issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/abesuden/C-minus/issues/)
 
 [![OOP](https://img.shields.io/badge/OOP-no-informational.svg)](https://github.com/abesuden/C-minus/contributors)
 [![NamingConvention](https://img.shields.io/badge/NamingConvention-camelCase-informational.svg)](https://github.com/abesuden/C-minus/contributors)
@@ -17,7 +16,7 @@
 
 ![C- Logo](https://github.com/Abesuden/C-minus/blob/master/img/logo.png)
 
-As students of [Dr. Eggen's](unf.edu/~ree) compilers class, at the [University of North Florida](unf.edu), we decided to help create documentation for [Dr. Eggen's](unf.edu/~ree) C- language for all future students. The main motivation came from the fact that Google does not have every answer and when we tried to search for knowledge on the C- language, we could not find anything of use. Hopefully this helps all future students with understanding the C- language and have it help to build the compiler.
+As students of [Dr. Eggen's](unf.edu/~ree) Compilers class, at the [University of North Florida](unf.edu), we decided to help create documentation for [Dr. Eggen's](unf.edu/~ree) C- language for all future students. The main motivation came from the fact that Google does not have every answer and when we tried to search for knowledge on the C- language, we could not find anything of use. Hopefully this helps all future students with understanding the C- language and have it help to build the compiler.
 
 ## Table of Contents
 
@@ -56,23 +55,23 @@ As students of [Dr. Eggen's](unf.edu/~ree) compilers class, at the [University o
 
 ## Summary
 
-The C- language is a subset of the C language. That means anything you can do in C- can be done in C, but not everything in C can be done in C-. The twenty nine grammer rules for C- can be found [here](https://csunplugged.files.wordpress.com/2012/12/compiler-construction-principles-and-practice-k-c-louden-pws-1997-cmp-2002-592s.pdf) on page 492 (501). As with any grammer, the type of parser will have to be choosen, such as LR(1) or LALR(1), and once done the grammer will need to be left factored and/or left recursed in order to work with the choosen parser. However, this level of detail will not be coverd in this documentation. What will be coverd deals with what acceptable syntax and symantics look like.
+The C- language is a subset of the C language. That means anything you can do in C- can be done in C, but not everything in C can be done in C-. The twenty-nine grammer rules for C- can be found [here](https://csunplugged.files.wordpress.com/2012/12/compiler-construction-principles-and-practice-k-c-louden-pws-1997-cmp-2002-592s.pdf) on page 492 (501). As with any grammar, the type of parser will have to be chosen, such as LR(1) or LALR(1), and once done the grammar may need to be modified in order to work with the chosen parser. However, this level of detail will not be coverd in this documentation. What will be covered deals with what acceptable syntax and symantics look like.
 
 [^TOC](#Table-Of-Contents)
 
 ## Getting Started
 
-The C- language has the nice property that it is made up of only a small amount of rules as compared to the C language. This property makes C- easier to code a compiler and you will see that the implementation of its grammer will be straight forward. It is important to note that, when constructing a program in C-, the program needs to have a `main` function just like that found in the C language. Below is an example of a required `main` funciton setup:
+The C- language has the nice property of being made up of only a small amount of rules as compared to the C language. This property makes C- easier to code a compiler and you will see that the implementation of its grammar will be straightforward. It is important to note that, when constructing a program in C-, the program needs to have a `main` function just like that found in the C language. Below is an example of a required `main` funciton setup:
 
 ```
-void main(void) {
+int main(void) {
 
   return 0;
 }
 ```
-> you will see any further examples without the main function, however the `main` function is required for all programs to compile correctly in C-.
+> you will see many further examples without the main function, however the `main` function is required for all programs to compile correctly in C- and will be implied.
 
-It is also important to note that, the `main` function must be the last function and every other function that is created must come before the `main` funciton. Also, the C- language does not care about white space.
+It is also important to note that the `main` function must be the last function and every other function that is created must come before the `main` function. Also, the C- language does not care about whitespace.
 
 [^TOC](#Table-Of-Contents)
 
