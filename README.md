@@ -7,7 +7,7 @@
 [![Language](https://img.shields.io/badge/Language-C---informational.svg)](https://github.com/abesuden/C-minus/contributors)
 [![Contributors](https://img.shields.io/badge/Contributors-2-informational.svg)](https://github.com/abesuden/C-minus/contributors)
 [![Maintenance](https://img.shields.io/badge/Maintained-yes-brightgreen.svg)](https://github.com/abesuden/C-minus/graphs/commit-activity)
-[![Progress](https://img.shields.io/badge/Progress-75%25-orange.svg)](https://github.com/abesuden/C-minus)
+[![Progress](https://img.shields.io/badge/Progress-90%25-orange.svg)](https://github.com/abesuden/C-minus)
 [![Issues](https://img.shields.io/github/issues/abesuden/C-minus.svg?maxAge=2592000)](https://github.com/Abesuden/C-minus/issues)
 
 [![OOP](https://img.shields.io/badge/OOP-no-informational.svg)](https://github.com/abesuden/C-minus/contributors)
@@ -35,6 +35,17 @@ As students of [Dr. Eggen's](unf.edu/~ree) Compilers class, at the [University o
       - [Headers](#Headers)
       - [Body](#Body)
       - [Return Statement](#Return-Statement)
+    
+    </details>
+
+  - [Conditionals](#Conditionals)
+  - [Loops](#Loops)
+  - [Compund Statement](#Compund-Statement)
+  - [Quadruples](#Quadruples)
+
+    <details>
+    <summary><strong>-expand-</strong></summary>
+
     - [](#)
     
     </details>
@@ -294,6 +305,142 @@ int funOne (int x) {
 
 [^TOC](#Table-Of-Contents)
 
+## Conditionals
+
+Before getting to the conditionals, it is important to know what conditional operators are allowed in the C- language. Following the grammer rules resource text from earlier (also found [here](https://csunplugged.files.wordpress.com/2012/12/compiler-construction-principles-and-practice-k-c-louden-pws-1997-cmp-2002-592s.pdf)), on page 491 (500) there is a reference to what operators are valid. Below is the list for convenience:
+
+```
+< <= > >= ++ != =
+```
+
+In the C- language, the only conditional that can be used is the `if ()` and `else` statements. The C- language does not support `else if ()` or `switch` statements. The following are acceptable ways to use a conditional:
+
+```
+if (x < 5 ) {
+  // do something
+} else {
+  // do something else
+}
+```
+```
+if ((x + 3) <= (5 + y / funOne(4, y))) {
+  // do something
+}
+```
+> Note: the `else {` can start on a seperate line from the `}`
+
+Below is an example of a conditional that is not acceptable:
+
+```
+if ('c' == x) {
+  // do something
+} else if (4 <= 5) {
+
+}
+```
+```
+if (4 << x) {
+  // do something
+} else {
+  // do something else
+}
+```
+> Note: turnary statements are also not excepted
+
+[^TOC](#Table-Of-Contents)
+
+## Loops
+
+While the concept of loops are supported in the C- language, the only loop that is allowed is the `while ()` loop. Below is an example of acceptable versions of the `while ()` loop:
+
+```
+while (count < 5) {
+  // do somthing
+  count = count + 1;
+}
+```
+> incrementing count was just shown as an example of how to use the `while ()` loop to iterate
+
+```
+while (x <= (5 + y / 2 + funThree(4, x, y))) {
+  // do somthing
+  count = count + 1;
+}
+```
+> math is supported when inside the conditional
+
+Some examples of not acceptable `while ()` loops are as follows:
+
+```
+while (x <= 5) {
+  // do somthing
+  count += 1;
+}
+```
+> the short hand `+=` is not supported in the C- language
+
+```
+while (True) {
+  // do somthing
+}
+```
+> booleans are not supported in the C- language
+
+```
+while (x < 5) {
+  // do somthing
+  break;
+}
+```
+> `break` statments are not supported in the C- language
+
+
+[^TOC](#Table-Of-Contents)
+
+## Compound Statement
+
+Compound statements refere to the use of `{` and `}` without any other code. The benifit of a compound statement is to create a new local scope which allows for new variable declerations inside the compound statement. These variables that are locally scoped cannot be used outside from any outer scoped references. An example can be found below:
+
+```
+// outer scope
+{
+  // do something within a local scope
+}
+// outer scope
+```
+> Note: anything that is in the outer scope can be referenced from inside the compound statement, but anything inside the compound statement cannot be used outside.
+
+[^TOC](#Table-Of-Contents)
+
+## Quadruples
+
+Quadruples are assembly like code that is spit out so that a RISC (Reduced instruction set computing) device can interperate and produce machine level 1's and 0's. To learn more about what is needed to produce accurate C- language quadruples, find it [here](https://github.com/abesuden/C-minus/quadruples.md). The code that is produced looks similar to what is found below:
+
+
+```
+0       func     main     void       0
+1      alloc       40              arr
+2      alloc        4                y
+3       mult        4        4      t0
+4       disp      arr       t0      t1
+5        add       t1        5      t2
+6     assign       t2                y
+7        end     func     main
+```
+> notice that there are 5 columns that are used to represent the RISC quadruples
+
+The  C- code that the quadruples were generated from the following example:
+
+```
+void main(void) {
+    int arr[10];
+    int y;
+    y = arr[4] + 5;
+}
+```
+
+[^TOC](#Table-Of-Contents)
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code
@@ -303,7 +450,7 @@ of conduct, and the process for commiting to this repository.
 
 ## Versioning
 
-We use [Git](https://git-scm.com/doc) for versioning. For the versions available, see the [tags on this repository](https://github.com/C-minus/tags).
+We use [Git](https://git-scm.com/doc) for versioning. For the versions available, see the [tags on this repository](https://github.com/abesuden/C-minus/tags).
 
 [^TOC](#Table-Of-Contents)
 
