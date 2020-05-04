@@ -301,8 +301,6 @@ of conduct, and the process for commiting to this repository.
 
 ## Versioning
 
-[^TOC](#Table-Of-Contents)
-
 We use [Git](https://git-scm.com/doc) for versioning. For the versions available, see the [tags on this repository](https://github.com/C-minus/tags).
 
 [^TOC](#Table-Of-Contents)
