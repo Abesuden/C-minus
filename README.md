@@ -126,7 +126,7 @@ int array[5] = {0,1,2,3,4};
 
 ### *Assigning Variables*
 
-Assigning variables is a little bit more complicated because arrays are part of the C- language. Assigning to a variable includes not only values but also indexed arrays and function returns. Below are examples:
+In C-, all variable declarations must be made *before* any assignments are made in a scope in order to follow the grammar rules. Assigning variables is a little bit more complicated because arrays are part of the C- language. Assigning to a variable includes not only values but also indexed arrays and function returns. Below are examples:
 
 ```
 a = 42;
