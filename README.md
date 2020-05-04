@@ -1,4 +1,4 @@
-<meta name="keywords"    content="C-, C-minus, C minus, C, C- compiler, C- grammer, C- Eggen, C minus Eggen, C- University of North Florida, compilers University of North Florida, compilers, cop4620, C- cop4620, cop4620 C-, Alex Besuden, Alexander Besuden, Austin Laurin">
+<meta name="keywords"    content="C-, C-minus, C minus, C, C- compiler, C- grammar, C- Eggen, C minus Eggen, C- University of North Florida, compilers University of North Florida, compilers, cop4620, C- cop4620, cop4620 C-, Alex Besuden, Alexander Besuden, Austin Laurin">
 <meta name="description" content="This documentation is about the C- language and how to understand it for making a compiler.">
 <meta name="author"      content="Alexander Besuden, Austin Laurin">
 
@@ -126,7 +126,7 @@ int array[5] = {0,1,2,3,4};
 
 ### *Assigning Variables*
 
-In C-, all variable declarations must be made *before* any assignments are made in a scope in order to follow the grammar rules. Assigning variables is a little bit more complicated because arrays are part of the C- language. Assigning to a variable includes not only values but also indexed arrays and function returns. Below are examples:
+In C-, all variable declarations must be made **before** any assignments are made in a scope in order to follow the grammar rules. Assigning variables is a little bit more complicated because arrays are part of the C- language. Assigning to a variable includes not only values but also indexed arrays and function returns. Below are examples:
 
 ```
 a = 42;
