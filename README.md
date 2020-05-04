@@ -9,8 +9,8 @@
 [![Maintenance](https://img.shields.io/badge/Maintained-yes-brightgreen.svg)](https://github.com/abesuden/C-minus/graphs/commit-activity)
 [![Progress](https://img.shields.io/badge/Progress-25%25-orange.svg)](https://github.com/abesuden/C-minus)
 [![Issues](https://img.shields.io/badge/Issues-2-1abc9c.svg)](https://github.com/abesuden/C-minus)
-[![GitHub issues open](https://img.shields.io/github/issues/Manu343726/siplasplas.svg?maxAge=2592000)]() 
-[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/Manu343726/siplasplas.svg?maxAge=2592000)]()
+[![GitHub issues open](https://img.shields.io/github/issues/abesuden/C-minus.svg?maxAge=2592000)]() 
+[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/abesuden/C-minus.svg?maxAge=2592000)]()
 
 [![OOP](https://img.shields.io/badge/OOP-no-informational.svg)](https://github.com/abesuden/C-minus/contributors)
 [![NamingConvention](https://img.shields.io/badge/NamingConvention-camelCase-informational.svg)](https://github.com/abesuden/C-minus/contributors)
