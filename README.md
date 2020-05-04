@@ -131,6 +131,8 @@ In C-, all variable declarations must be made **before** any assignments are mad
 ```
 a = 42;
 a = arrayOne[3];
+a = arrayOne[b];
+a = arrayOne[fun(4)];
 a = mathFun(2, 4);
 arrayOne[2] = a;
 arrayTwo[1] = mathFun(2, 4);
