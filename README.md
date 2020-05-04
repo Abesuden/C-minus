@@ -7,8 +7,8 @@
 [![Language](https://img.shields.io/badge/Language-C---informational.svg)](https://github.com/abesuden/C-minus/contributors)
 [![Contributors](https://img.shields.io/badge/Contributors-2-informational.svg)](https://github.com/abesuden/C-minus/contributors)
 [![Maintenance](https://img.shields.io/badge/Maintained-yes-brightgreen.svg)](https://github.com/abesuden/C-minus/graphs/commit-activity)
-[![Progress](https://img.shields.io/badge/Progress-75%25-orange.svg)](https://github.com/abesuden/C-minus)
-[![GitHub issues open](https://img.shields.io/github/issues/abesuden/C-minus.svg?maxAge=2592000)]() 
+[![Progress](https://img.shields.io/badge/Progress-25%25-orange.svg)](https://github.com/abesuden/C-minus)
+[![Issues](https://img.shields.io/badge/Issues-2-1abc9c.svg)](https://github.com/abesuden/C-minus)
 
 [![OOP](https://img.shields.io/badge/OOP-no-informational.svg)](https://github.com/abesuden/C-minus/contributors)
 [![NamingConvention](https://img.shields.io/badge/NamingConvention-camelCase-informational.svg)](https://github.com/abesuden/C-minus/contributors)
@@ -126,7 +126,7 @@ int array[5] = {0,1,2,3,4};
 
 ### *Assigning Variables*
 
-Assigning variables is a little bit more complicated because arrays are part of the C- language. Assigning to a variable includes, not only values but also indexed arrays and function returns. Below are examples:
+Assigning variables is a little bit more complicated because arrays are part of the C- language. Assigning to a variable includes not only values but also indexed arrays and function returns. Below are examples:
 
 ```
 a = 42;
@@ -156,7 +156,7 @@ Once you understand the above examples, then you will need to understand how com
 
 ```
 a = 5 - 2 + 6 / 3;
-a = b = c * d = e - 4;
+a = b = c = d - 4;
 a = arrayOne[25]; // even though this array is of size 5, this is still accepted
 a = arrayOne[6/2];
 a = arrayOne[0] = arrayOne[3] = arrayOne[2-1] = arrayOne[4/1];
@@ -167,13 +167,13 @@ a = arrayOne[0] = arrayOne[3] = arrayOne[2-1] = arrayOne[4/1];
 
 ### *Functions*
 
-The C- language supports two types of functions, both type `int` and type `void`. Remember that, in the C laguage, the type specified in the function header, is the type the needs to be returned at the end of the function. 
+The C- language supports two types of functions, both type `int` and type `void`. Remember that, in the C laguage, the type specified in the function header is the type thq5 needs to be returned at the end of the function. 
 
 [^TOC](#Table-Of-Contents)
 
 #### *Headers*
 
-Inside a functions header, there will be variable initialization but again these will only be of type `int`. Also remember that, like in the C language, the C- language requires the function return type to be defined. Below are examples of acceptable function headers:
+Inside a function header, there will be variable initialization, but these, again, will only be of type `int`. Also remember that, like in the C language, the C- language requires the function return type to be defined. Below are examples of acceptable function headers:
 
 ```
 int funOne () {
@@ -212,7 +212,7 @@ int funOne (bool x) {
 
 #### *Body*
 
-The body of any function maintains the same rules as found througout this documentation. However, keep in mind that scope does play a role here. So if a function has not been defined above, then the current function cannot reference it and there will be an error. For example, this is acceptable:
+The body of any function maintains the same rules as found throughout this documentation. However, keep in mind that scope does play a role here. So, if a function has not been defined above, then the current function cannot reference it and there will be an error. For example, this is acceptable:
 
 ```
 int funOne (int x) {
@@ -254,7 +254,7 @@ Return statements are tied to the type specified in the header, whether it was `
 ```
 return;
 ```
-> for type `void`, a return statement is not needed but it can still have one
+> for type `void`, a return statement is not needed, but it can still have one
 
 ```
 return a;
@@ -269,7 +269,7 @@ return array[3];
 ```
 return thisFun(y);
 ```
-> for type `int` functions can be recursively called or any previously defined funcitons
+> for type `int` functions can be recursively called or any previously defined functions
 
 ```
 return 4 - 3 / 4 * x + 1 - arrayOne[2] aboveFun(4, 5 - 2);
