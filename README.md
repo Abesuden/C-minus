@@ -1,4 +1,4 @@
-<meta name="keywords"    content="C-, C-minus, C minus, C, C- compiler, C- grammar, C- Eggen, C minus Eggen, C- University of North Florida, compilers University of North Florida, compilers, cop4620, C- cop4620, cop4620 C-, Alex Besuden, Alexander Besuden, Austin Laurin">
+<meta name="keywords"    content="C-, C-minus, C minus, C, C- compiler, C- grammar, C- Eggen, C minus Eggen, C- University of North Florida, compilers University of North Florida, compilers, cop4620, C- cop4620, cop4620 C-, Alex Besuden, Alexander Besuden, Austin Laurin, Katherine Whooley, Kate Whooley">
 <meta name="description" content="This documentation is about the C- language and how to understand it for making a compiler.">
 <meta name="author"      content="Alexander Besuden, Austin Laurin">
 
@@ -464,6 +464,7 @@ This project is licensed under the [MIT](LICENSE.md) Creative Commons License - 
 ## Acknowledgments
 
   * [@Austin Laurin](https://github.com/AustinLaurin) - for basically being a compiler himself.
+  * [@Katherine Whooley](https://github.com/ufkw) - for taking the time our of her days to make this documentation all the better.
   * [Alexander Besuden](http://AlexanderBesuden.com) - for making this documentation beautiful while still allowing for an easy to read and full understanding.
   
  [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/abesuden/C-minus)
